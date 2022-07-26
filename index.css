@@ -165,7 +165,7 @@ p {
 .letter-submit {
   background-color: #9c7a48;
   color: #ffffff;
-  padding: 5px 25px 7px 25px;
+  padding: 5px 20px 7px 20px;
   border-radius: 3px;
 }
 
@@ -173,6 +173,7 @@ p {
   height: 250px;
   margin-top: 24px;
   margin-left: 32px;
+  margin-bottom: 24px;
   border: 1px solid #9c7a48;
   border-radius: 10px;
   position: relative;
@@ -194,4 +195,12 @@ p {
 
 .shop-info-example {
   
+}
+
+.shop-img {
+  box-sizing: border-box;
+  display: block;
+  width: 100px;
+  height: 150px;
+  margin: 20px;
 }
