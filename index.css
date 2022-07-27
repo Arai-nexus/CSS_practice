@@ -1,22 +1,26 @@
-body {
-  background-color: black;
-  font-family: "NotoSansCJKjp-Bold";
-  color: #fff;
-  width: 100%;
-  max-width: 1280px;
-  margin: 120px;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  max-width: 300px;
 }
 
-.header-logo {
-  width: 200px;
-  height: 100px;
-}
 
 .nav li {
   color: #fff;
-  display: inline-block;
   margin: 20px;
+  display: inline-block;
 }
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
 
 .flex {
   display: flex;
@@ -31,7 +35,7 @@ a {
   color: #fff;
 }
 
-.login-botton {
+.login-button {
   font-family: "NotoSansCJKjp-Bold";
   color: #ffffff;
   background-color: #333333;
@@ -41,11 +45,13 @@ a {
 
 .register-button {
   font-family: "NotoSansCJKjp-Bold";
+  color: #ffffff;
   background-color: #9c7a48;
   padding: 5px 17px 7px 17px;
   border-radius: 3px;
 }
 
+/* チェックボックスを非表示にする */
 .menu-trigger,
 .menu-trigger span {
   display: inline-block;
@@ -60,6 +66,7 @@ a {
   border: none;
   appearance: none;
   cursor: pointer;
+  z-index: 100;
 }
 
 .menu-trigger span {
@@ -176,11 +183,10 @@ p {
   margin-bottom: 24px;
   border: 1px solid #9c7a48;
   border-radius: 10px;
-  position: relative;
 }
 
 .shop-info {
-  display:inline-block;
+  display: inline-block;
   padding: 0.5em 1em;
   margin: 2em 0;
   font-weight: bold;
@@ -194,13 +200,38 @@ p {
 }
 
 .shop-info-example {
-  
+  box-sizing: border-box;
+  display: block;
+  width: 300px;
+  margin: 10px;
 }
 
 .shop-img {
   box-sizing: border-box;
   display: block;
-  width: 100px;
+  width: 250px;
   height: 150px;
   margin: 20px;
+}
+
+.subscription-plan {
+  margin: auto;
+}
+
+.online-shop-page {
+  background-color: #9c7a48;
+  color: #ffffff;
+  padding: 5px 20px 7px 20px;
+  border-radius: 3px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.sign-up-page {
+  background-color: #9c7a48;
+  color: #ffffff;
+  padding: 5px 20px 7px 20px;
+  border-radius: 3px;
+  margin: 10px;
+  z-index: 2;
 }
