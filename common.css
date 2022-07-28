@@ -1,12 +1,11 @@
-/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 * {
   background-color: #000000;
-  font-family: "NotoSansCJKjp-Bold";
   color: #ffffff;
   font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 body {
-  width: 100%;
+  flex-direction: column;
 }
