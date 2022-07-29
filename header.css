@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  z-index: 999;
+  z-index: 111;
   top: 0;
   left: 0;
   width: 100%;
@@ -116,7 +116,7 @@ li {
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header-menu {
     display: flex;
     flex-direction: row;
@@ -157,7 +157,7 @@ li {
   }
   
   .register-button {
-    color: #212529;
+    color: #000000;
     background-color: #9c7a48;
     font-size: 14px;
     padding: 5px 17px 7px 17px;
@@ -253,7 +253,7 @@ li {
   }
   
   .register-button {
-    color: #212529;
+    color: #ffffff;
     background-color: #9c7a48;
     font-size: 14px;
     padding: 5px 17px 7px 17px;
@@ -299,4 +299,7 @@ li {
   .toggle-btn span:nth-child(3) {
     bottom: 4px;
   }
+}
+
+@media (min-width: 1024px) {
 }
