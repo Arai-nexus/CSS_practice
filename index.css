@@ -32,7 +32,7 @@
 
   .news {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Oswald";
     margin: 20px 0px 20px 0px;
   }
@@ -376,12 +376,11 @@
   }
 
   .margin-top {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .info-sentence {
     font-weight: bold;
-    margin:auto;
   }
 
   .shop-info-example {
@@ -533,6 +532,10 @@
     width: 293px;
     height: 159px;
     border-radius: 3px;
+  }
+
+  .three-news-img:last-child {
+    display: none;
   }
   
   .container .three-news-img {
