@@ -10,3 +10,12 @@ body {
   box-sizing: border-box;
   flex-direction: column;
 }
+
+a:active {
+color: #9c7a48;
+text-decoration: none;
+}
+
+ul {
+  padding-left: 0px;
+}
