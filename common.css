@@ -11,6 +11,13 @@ body {
   flex-direction: column;
 }
 
+a {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 120px;
+  text-overflow: ellipsis;
+}
+
 a:active {
 color: #9c7a48;
 text-decoration: none;

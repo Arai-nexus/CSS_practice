@@ -43,7 +43,7 @@
     display: block;
     width: 100%;
     height: 148px;
-    padding-top: 30px;
+    padding-top: 0px;
   }
 
   .sentence {
@@ -100,6 +100,7 @@
     height: 43px;
     padding: 5px 20px 7px 20px;
     border-radius: 3px;
+    margin-top: 1rem;
   }
 
 
@@ -186,7 +187,7 @@
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) {
   .news-img {
     display: block;
     width: 100%;
@@ -207,7 +208,7 @@
     font-size: 30px;
     font-weight: 600;
     font-family: "Oswald";
-    margin: 20px 0px 20px 0px;
+    margin: 64px 0px 20px 0px;
   }
   
   .introduce {
@@ -303,6 +304,7 @@
     width: 98px;
     padding: 11px 1px 11px 1px;
     border-radius: 10px;
+    margin-top: 1rem;
   }
 
   .shop-info-contents {
@@ -376,8 +378,6 @@
 
 
 @media screen and (min-width: 1024px) {
-
-  
   .news-img {
     display: block;
     width: 100%;
@@ -419,13 +419,11 @@
 
   .contents {
     flex-flow: column;
-    height: 245px;
+    width: 33%;
   }
   
   .news-sentence {
     width: 293px;
-    height: 38px;
-    text-overflow: " [..]";
   }
   
   .three-news-img {
@@ -434,20 +432,20 @@
     border-radius: 3px;
   }
 
-  .three-news-img:last-child {
+  /* .three-news-img:last-child {
     display: none;
-  }
+  } */
   
   .container .three-news-img {
-      width: 33%;
+      width: calc(33% - 30px);
   }
   
   .five-row-contents {
-    width: 20%;
+    display: block;
+    width: calc(20% - 30px);
   }
   
   .five-news-img {
-    box-sizing: border-box;
     display: block;
     width: 170px;
     height: 150px;
@@ -463,6 +461,7 @@
   .letter-form {
     width: 655px;
     border-radius: 10px;
+    margin-top: 1rem;
   }
   
   .letter-submit {
@@ -497,6 +496,10 @@
   
   .info-sentence {
     font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 120px;
+    text-overflow: ellipsis;
   }
   
   .shop-info-example {
@@ -504,6 +507,13 @@
     display: block;
     width: 300px;
     margin: 10px;
+  }
+
+  .shop-explanation {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 120px;
+    text-overflow: ellipsis;
   }
   
   .shop-img {
