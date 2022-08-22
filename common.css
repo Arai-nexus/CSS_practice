@@ -26,3 +26,89 @@ text-decoration: none;
 ul {
   padding-left: 0px;
 }
+
+/* ボタンのデザイン */
+.btn {
+  background-color: #9c7a48;
+  padding: 5px 8px 7px 8px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+/* オーバーレイ */
+.overlay {
+  /* 位置を固定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 画面いっぱいに広がるようにする */
+  width: 100%;
+  height: 100vh;
+  /* rgbaを使って60%の黒いオーバーレイにする */
+  background: rgba(0, 0, 0, 0.6);  
+  /* デフォルトでは見えないようにする */
+  opacity: 0;
+  visibility: hidden;
+  /* 表示する際の変化の所要時間 */
+  transition: .3s;
+}
+
+/* activeクラスのついたオーバーレイ */
+.overlay.active {
+  /* activeクラスがついたときにオーバーレイを表示する */
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダルウィンドウ */
+.modal {
+  max-width: 500px;
+  width: 86%;
+  padding: 15px 20px;
+  background: #fff;
+  /* 位置の調整(真ん中に表示) */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* デフォルトでは非表示にしておく */
+  opacity: 0;
+  visibility: hidden;
+  /* 表示の変化にかかる時間 */
+  transition: .3s;
+}
+
+/* activeクラスのついたモーダルウィンドウ */
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダルウィンドウ内の閉じるボタン */
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  font-size: 13px;
+}
+
+/* スクロールできる高さを出すための設定 */
+section {
+  height: 200vh;
+}
+Resources
